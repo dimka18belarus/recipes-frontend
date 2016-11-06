@@ -1,5 +1,3 @@
-
-
 describe('Recipe', function () {
   var $httpBackend;
   var Recipe;

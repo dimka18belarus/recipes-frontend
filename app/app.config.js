@@ -1,5 +1,3 @@
-
-
 angular.module('recipeApp').
   config(['$locationProvider' ,'$routeProvider',
     function config($locationProvider, $routeProvider) {

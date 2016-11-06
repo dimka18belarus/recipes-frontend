@@ -1,5 +1,3 @@
-
-
 angular.module('core.recipe').factory('Recipe', ['$resource',
     function($resource) {
         return $resource('recipes/:recipeId.json', {}, {
