@@ -1,6 +1,6 @@
 'use strict';
 
-// Define the `phoneDetail` module
+// Define the `recipeDetail` module
 angular.module('recipeDetail', [
   'ngRoute',
   'core.recipe'

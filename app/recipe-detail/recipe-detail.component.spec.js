@@ -2,7 +2,7 @@
 
 describe('recipeDetail', function () {
 
-  // Load the module that contains the `phoneDetail` component before each test
+  // Load the module that contains the `recipeDetail` component before each test
   beforeEach(module('recipeDetail'));
 
   // Test the controller

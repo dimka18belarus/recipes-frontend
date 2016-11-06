@@ -14,7 +14,7 @@ describe('Recipe', function () {
     jasmine.addCustomEqualityTester(angular.equals);
   });
 
-  // Load the module that contains the `Phone` service before each test
+  // Load the module that contains the `Recipe` service before each test
   beforeEach(module('core.recipe'));
 
   // Instantiate the service and "train" `$httpBackend` before each test
