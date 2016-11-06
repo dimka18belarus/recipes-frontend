@@ -1,8 +1,7 @@
 'use strict';
 
 // Register `phoneDetail` component, along with its associated controller and template
-angular.
-  module('phoneDetail').
+angular.module('recipeDetail').
   component('phoneDetail', {
   templateUrl: 'phone-detail/recipe-detail.template.html',
     controller: ['$routeParams', 'Phone',

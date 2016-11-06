@@ -1,9 +1,9 @@
 'use strict';
 
-describe('phoneDetail', function() {
+describe('recipeDetail', function () {
 
   // Load the module that contains the `phoneDetail` component before each test
-  beforeEach(module('phoneDetail'));
+  beforeEach(module('recipeDetail'));
 
   // Test the controller
   describe('PhoneDetailController', function() {
