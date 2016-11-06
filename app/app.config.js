@@ -11,7 +11,7 @@ angular.
         template: '<recipe-list></recipe-list>'
         }).
         when('/phones/:phoneId', {
-          template: '<phone-detail></phone-detail>'
+        template: '<recipe-detail></recipe-detail>'
         }).
         otherwise('/phones');
     }

@@ -19,7 +19,7 @@ describe('recipeDetail', function () {
 
       $routeParams.phoneId = 'xyz';
 
-      ctrl = $componentController('phoneDetail');
+      ctrl = $componentController('recipeDetail');
     }));
 
     it('should fetch the phone details', function() {
