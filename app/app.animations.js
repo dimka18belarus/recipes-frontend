@@ -1,7 +1,6 @@
 'use strict';
 
-angular.
-  module('phonecatApp').animation('.recipe', function phoneAnimationFactory() {
+angular.module('recipeApp').animation('.recipe', function phoneAnimationFactory() {
     return {
       addClass: animateIn,
       removeClass: animateOut
