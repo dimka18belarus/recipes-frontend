@@ -1,8 +1,7 @@
 'use strict';
 
 // Register `phoneList` component, along with its associated controller and template
-angular.
-  module('phoneList').
+angular.module('recipeList').
   component('phoneList', {
   templateUrl: 'phone-list/recipe-list.template.html',
     controller: ['Phone',
