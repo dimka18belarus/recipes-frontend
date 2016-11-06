@@ -1,4 +1,4 @@
-'use strict';
+
 
 // Register `recipeDetail` component, along with its associated controller and template
 angular.module('recipeDetail').component('recipeDetail', {

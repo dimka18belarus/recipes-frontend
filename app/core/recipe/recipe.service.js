@@ -1,4 +1,4 @@
-'use strict';
+
 
 angular.module('core.recipe').factory('Recipe', ['$resource',
     function($resource) {

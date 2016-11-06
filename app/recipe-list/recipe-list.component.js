@@ -1,4 +1,4 @@
-'use strict';
+
 
 // Register `recipeList` component, along with its associated controller and template
 angular.module('recipeList').component('recipeList', {

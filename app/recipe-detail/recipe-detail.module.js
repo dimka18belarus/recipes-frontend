@@ -1,4 +1,4 @@
-'use strict';
+
 
 // Define the `recipeDetail` module
 angular.module('recipeDetail', [

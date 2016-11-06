@@ -1,4 +1,4 @@
-'use strict';
+
 
 describe('Recipe', function () {
   var $httpBackend;
