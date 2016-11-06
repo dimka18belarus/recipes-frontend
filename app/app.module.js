@@ -1,5 +1,3 @@
-
-
 // Define the `phonecatApp` module
 angular.module('recipeApp', [
   'ngAnimate',
