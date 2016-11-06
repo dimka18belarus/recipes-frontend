@@ -3,14 +3,14 @@
 // Angular E2E Testing Guide:
 // https://docs.angularjs.org/guide/e2e-testing
 
-describe('PhoneCat Application', function() {
+describe('Recipe Application', function () {
 
     it('should redirect `index.html` to `index.html#!/recipes', function () {
     browser.get('index.html');
         expect(browser.getLocationAbsUrl()).toBe('/recipes');
   });
 
-  describe('View: Phone list', function() {
+  describe('View: Recipe list', function () {
 
     beforeEach(function() {
         browser.get('index.html#!/recipes');
@@ -67,7 +67,7 @@ describe('PhoneCat Application', function() {
 
   });
 
-  describe('View: Phone detail', function() {
+  describe('View: Recipe detail', function () {
 
     beforeEach(function() {
         browser.get('index.html#!/recipes/nexus-s');
@@ -78,13 +78,13 @@ describe('PhoneCat Application', function() {
     });
 
     it('should display the first recipe image as the main recipe image', function () {
-      var mainImage = element(by.css('img.phone.selected'));
+      var mainImage = element(by.css('img.recipe.selected'));
 
       expect(mainImage.getAttribute('src')).toMatch(/img\/phones\/nexus-s.0.jpg/);
     });
 
     it('should swap the main image when clicking on a thumbnail image', function() {
-      var mainImage = element(by.css('img.phone.selected'));
+      var mainImage = element(by.css('img.recipe.selected'));
       var thumbnails = element.all(by.css('.recipe-thumbs img'));
 
       thumbnails.get(2).click();
