@@ -20,7 +20,7 @@ describe('Phone', function() {
   // Instantiate the service and "train" `$httpBackend` before each test
   beforeEach(inject(function(_$httpBackend_, _Phone_) {
     $httpBackend = _$httpBackend_;
-    $httpBackend.expectGET('phones/phones.json').respond(phonesData);
+    $httpBackend.expectGET('recipes/phones.json').respond(phonesData);
 
     Phone = _Phone_;
   }));
@@ -31,7 +31,7 @@ describe('Phone', function() {
     $httpBackend.verifyNoOutstandingRequest();
   });
 
-  it('should fetch the phones data from `/phones/phones.json`', function() {
+  it('should fetch the recipes data from `/recipes/recipes.json`', function () {
     var phones = Phone.query();
 
     expect(phones).toEqual([]);

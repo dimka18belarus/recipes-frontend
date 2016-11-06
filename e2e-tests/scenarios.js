@@ -5,15 +5,15 @@
 
 describe('PhoneCat Application', function() {
 
-  it('should redirect `index.html` to `index.html#!/phones', function() {
+    it('should redirect `index.html` to `index.html#!/recipes', function () {
     browser.get('index.html');
-    expect(browser.getLocationAbsUrl()).toBe('/phones');
+        expect(browser.getLocationAbsUrl()).toBe('/recipes');
   });
 
   describe('View: Phone list', function() {
 
     beforeEach(function() {
-      browser.get('index.html#!/phones');
+        browser.get('index.html#!/recipes');
     });
 
     it('should filter the phone list as a user types into the search box', function() {
@@ -61,8 +61,8 @@ describe('PhoneCat Application', function() {
       var query = element(by.model('$ctrl.query'));
       query.sendKeys('nexus');
 
-      element.all(by.css('.phones li a')).first().click();
-      expect(browser.getLocationAbsUrl()).toBe('/phones/nexus-s');
+        element.all(by.css('.recipes li a')).first().click();
+        expect(browser.getLocationAbsUrl()).toBe('/recipes/nexus-s');
     });
 
   });
@@ -70,7 +70,7 @@ describe('PhoneCat Application', function() {
   describe('View: Phone detail', function() {
 
     beforeEach(function() {
-      browser.get('index.html#!/phones/nexus-s');
+        browser.get('index.html#!/recipes/nexus-s');
     });
 
     it('should display the `nexus-s` page', function() {

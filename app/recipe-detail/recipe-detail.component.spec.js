@@ -15,7 +15,7 @@ describe('recipeDetail', function () {
 
     beforeEach(inject(function($componentController, _$httpBackend_, $routeParams) {
       $httpBackend = _$httpBackend_;
-      $httpBackend.expectGET('phones/xyz.json').respond(xyzRecipeData);
+      $httpBackend.expectGET('recipes/xyz.json').respond(xyzRecipeData);
 
       $routeParams.phoneId = 'xyz';
 

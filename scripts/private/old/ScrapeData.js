@@ -10,7 +10,7 @@ var httpAgent = require('http-agent'),
 
 
 var agent = httpAgent.create('www.google.com', ['/phone/']);
-var baseDir = __dirname + '/../app/phones/';
+var baseDir = __dirname + '/../app/recipes/';
 var phones = [];
 
 function boolean (text) {
