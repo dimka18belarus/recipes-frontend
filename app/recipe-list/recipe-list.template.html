@@ -23,10 +23,10 @@
       <ul class="recipes">
         <li ng-repeat="recipe in $ctrl.recipes | filter:$ctrl.query | orderBy:$ctrl.orderProp"
             class="thumbnail recipe-list-item">
-          <a href="#!/phones/{{recipe.id}}" class="thumb">
+            <a href="#!/recipes/{{recipe.id}}" class="thumb">
             <img ng-src="{{recipe.imageUrl}}" alt="{{recipe.name}}"/>
           </a>
-          <a href="#!/phones/{{recipe.id}}">{{recipe.name}}</a>
+            <a href="#!/recipes/{{recipe.id}}">{{recipe.name}}</a>
           <p>{{recipe.snippet}}</p>
         </li>
       </ul>
