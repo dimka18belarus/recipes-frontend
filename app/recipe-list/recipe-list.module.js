@@ -1,4 +1,4 @@
 'use strict';
 
-// Define the `phoneList` module
+// Define the `recipeList` module
 angular.module('recipeList', ['core.phone']);

@@ -2,11 +2,11 @@
 
 describe('recipeList', function () {
 
-  // Load the module that contains the `phoneList` component before each test
+  // Load the module that contains the `recipeList` component before each test
   beforeEach(module('recipeList'));
 
   // Test the controller
-  describe('PhoneListController', function() {
+  describe('RecipeListController', function () {
     var $httpBackend, ctrl;
 
     beforeEach(inject(function($componentController, _$httpBackend_) {
@@ -14,7 +14,7 @@ describe('recipeList', function () {
       $httpBackend.expectGET('phones/phones.json')
                   .respond([{name: 'Nexus S'}, {name: 'Motorola DROID'}]);
 
-      ctrl = $componentController('phoneList');
+      ctrl = $componentController('recipeList');
     }));
 
     it('should create a `phones` property with 2 phones fetched with `$http`', function() {
