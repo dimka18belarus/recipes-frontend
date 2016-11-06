@@ -17,27 +17,27 @@ describe('PhoneCat Application', function() {
     });
 
     it('should filter the phone list as a user types into the search box', function() {
-      var phoneList = element.all(by.repeater('phone in $ctrl.phones'));
+      var recipeList = element.all(by.repeater('recipe in $ctrl.recipes'));
       var query = element(by.model('$ctrl.query'));
 
-      expect(phoneList.count()).toBe(20);
+      expect(recipeList.count()).toBe(20);
 
       query.sendKeys('nexus');
-      expect(phoneList.count()).toBe(1);
+      expect(recipeList.count()).toBe(1);
 
       query.clear();
       query.sendKeys('motorola');
-      expect(phoneList.count()).toBe(8);
+      expect(recipeList.count()).toBe(8);
     });
 
     it('should be possible to control phone order via the drop-down menu', function() {
       var queryField = element(by.model('$ctrl.query'));
       var orderSelect = element(by.model('$ctrl.orderProp'));
       var nameOption = orderSelect.element(by.css('option[value="name"]'));
-      var phoneNameColumn = element.all(by.repeater('phone in $ctrl.phones').column('phone.name'));
+      var recipeNameColumn = element.all(by.repeater('recipe in $ctrl.recipes').column('recipe.name'));
 
       function getNames() {
-        return phoneNameColumn.map(function(elem) {
+        return recipeNameColumn.map(function (elem) {
           return elem.getText();
         });
       }
@@ -74,7 +74,7 @@ describe('PhoneCat Application', function() {
     });
 
     it('should display the `nexus-s` page', function() {
-      expect(element(by.binding('$ctrl.phone.name')).getText()).toBe('Nexus S');
+      expect(element(by.binding('$ctrl.recipe.name')).getText()).toBe('Nexus S');
     });
 
     it('should display the first phone image as the main phone image', function() {

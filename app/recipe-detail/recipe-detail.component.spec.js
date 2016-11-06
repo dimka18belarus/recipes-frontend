@@ -25,10 +25,10 @@ describe('recipeDetail', function () {
     it('should fetch the phone details', function() {
       jasmine.addCustomEqualityTester(angular.equals);
 
-      expect(ctrl.phone).toEqual({});
+      expect(ctrl.recipe).toEqual({});
 
       $httpBackend.flush();
-      expect(ctrl.phone).toEqual(xyzPhoneData);
+      expect(ctrl.recipe).toEqual(xyzPhoneData);
     });
 
   });
