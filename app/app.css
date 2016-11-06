@@ -8,11 +8,11 @@ h1 {
 }
 
 /* View: Phone list */
-.phones {
+.recipes {
   list-style: none;
 }
 
-.phones li {
+.recipes li {
   clear: both;
   height: 115px;
   padding-top: 15px;
