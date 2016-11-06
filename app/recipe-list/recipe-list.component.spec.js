@@ -17,7 +17,7 @@ describe('recipeList', function () {
       ctrl = $componentController('recipeList');
     }));
 
-    it('should create a `phones` property with 2 phones fetched with `$http`', function() {
+    it('should create a `recipes` property with 2 recipes fetched with `$http`', function () {
       jasmine.addCustomEqualityTester(angular.equals);
 
       expect(ctrl.recipes).toEqual([]);
