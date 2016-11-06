@@ -1,4 +1,4 @@
-// Define the `phonecatApp` module
+// Define the `recipeApp` module
 angular.module('recipeApp', [
   'ngAnimate',
   'ngRoute',
