@@ -1,0 +1,25 @@
+{
+  "advice": "Don't worry, be happy",
+  "products": [
+    {
+      "name": "apple",
+      "imageUrl": "",
+      "advice": "Take green",
+      "rare": 1,
+      "tags": [
+        1,
+        2
+      ]
+    },
+    {
+      "name": "flour",
+      "imageUrl": "",
+      "advice": "Good advice",
+      "rare": 1,
+      "tags": [
+        3,
+        4
+      ]
+    }
+  ]
+}
