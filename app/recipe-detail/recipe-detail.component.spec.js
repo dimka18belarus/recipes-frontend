@@ -17,7 +17,7 @@ describe('recipeDetail', function () {
       $httpBackend = _$httpBackend_;
       $httpBackend.expectGET('recipes/xyz.json').respond(xyzRecipeData);
 
-      $routeParams.phoneId = 'xyz';
+      $routeParams.recipeId = 'xyz';
 
       ctrl = $componentController('recipeDetail');
     }));

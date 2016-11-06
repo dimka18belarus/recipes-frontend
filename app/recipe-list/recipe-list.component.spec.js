@@ -11,7 +11,7 @@ describe('recipeList', function () {
 
     beforeEach(inject(function($componentController, _$httpBackend_) {
       $httpBackend = _$httpBackend_;
-      $httpBackend.expectGET('recipes/phones.json')
+      $httpBackend.expectGET('recipes/recipes.json')
                   .respond([{name: 'Nexus S'}, {name: 'Motorola DROID'}]);
 
       ctrl = $componentController('recipeList');

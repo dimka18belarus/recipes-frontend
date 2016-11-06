@@ -6,8 +6,8 @@ angular.module('recipeDetail').component('recipeDetail', {
   controller: ['$routeParams', 'Recipe',
     function RecipeDetailController($routeParams, Recipe) {
         var self = this;
-      self.recipe = Recipe.get({phoneId: $routeParams.phoneId}, function (phone) {
-          self.setImage(phone.images[0]);
+      self.recipe = Recipe.get({recipeId: $routeParams.recipeId}, function (recipe) {
+        self.setImage(recipe.images[0]);
         });
 
         self.setImage = function setImage(imageUrl) {

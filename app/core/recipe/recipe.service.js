@@ -2,10 +2,10 @@
 
 angular.module('core.recipe').factory('Recipe', ['$resource',
     function($resource) {
-      return $resource('recipes/:phoneId.json', {}, {
+        return $resource('recipes/:recipeId.json', {}, {
         query: {
           method: 'GET',
-          params: {phoneId: 'phones'},
+            params: {recipeId: 'recipes'},
           isArray: true
         }
       });

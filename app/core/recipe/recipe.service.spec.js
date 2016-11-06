@@ -20,7 +20,7 @@ describe('Recipe', function () {
   // Instantiate the service and "train" `$httpBackend` before each test
   beforeEach(inject(function (_$httpBackend_, _Recipe_) {
     $httpBackend = _$httpBackend_;
-    $httpBackend.expectGET('recipes/phones.json').respond(recipesData);
+    $httpBackend.expectGET('recipes/recipes.json').respond(recipesData);
 
     Recipe = _Recipe_;
   }));

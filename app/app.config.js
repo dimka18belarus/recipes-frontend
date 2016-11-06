@@ -8,7 +8,7 @@ angular.
 
       $routeProvider.when('/recipes', {
         template: '<recipe-list></recipe-list>'
-        }).when('/recipes/:phoneId', {
+      }).when('/recipes/:recipeId', {
         template: '<recipe-detail></recipe-detail>'
         }).otherwise('/recipes');
     }
