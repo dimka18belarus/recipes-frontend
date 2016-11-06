@@ -5,7 +5,7 @@ angular.module('recipeList').component('recipeList', {
   templateUrl: 'recipe-list/recipe-list.template.html',
     controller: ['Phone',
       function PhoneListController(Phone) {
-        this.phones = Phone.query();
+        this.recipes = Phone.query();
         this.orderProp = 'age';
       }
     ]

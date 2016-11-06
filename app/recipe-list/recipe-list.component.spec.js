@@ -20,10 +20,10 @@ describe('recipeList', function () {
     it('should create a `phones` property with 2 phones fetched with `$http`', function() {
       jasmine.addCustomEqualityTester(angular.equals);
 
-      expect(ctrl.phones).toEqual([]);
+      expect(ctrl.recipes).toEqual([]);
 
       $httpBackend.flush();
-      expect(ctrl.phones).toEqual([{name: 'Nexus S'}, {name: 'Motorola DROID'}]);
+      expect(ctrl.recipes).toEqual([{name: 'Nexus S'}, {name: 'Motorola DROID'}]);
     });
 
     it('should set a default value for the `orderProp` property', function() {
