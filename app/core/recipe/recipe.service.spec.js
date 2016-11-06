@@ -1,9 +1,9 @@
 'use strict';
 
-describe('Phone', function() {
+describe('Recipe', function () {
   var $httpBackend;
-  var Phone;
-  var phonesData = [
+  var Recipe;
+  var recipesData = [
     {name: 'Phone X'},
     {name: 'Phone Y'},
     {name: 'Phone Z'}
@@ -15,14 +15,14 @@ describe('Phone', function() {
   });
 
   // Load the module that contains the `Phone` service before each test
-  beforeEach(module('core.phone'));
+  beforeEach(module('core.recipe'));
 
   // Instantiate the service and "train" `$httpBackend` before each test
-  beforeEach(inject(function(_$httpBackend_, _Phone_) {
+  beforeEach(inject(function (_$httpBackend_, _Recipe_) {
     $httpBackend = _$httpBackend_;
-    $httpBackend.expectGET('recipes/phones.json').respond(phonesData);
+    $httpBackend.expectGET('recipes/phones.json').respond(recipesData);
 
-    Phone = _Phone_;
+    Recipe = _Recipe_;
   }));
 
   // Verify that there are no outstanding expectations or requests after each test
@@ -32,12 +32,12 @@ describe('Phone', function() {
   });
 
   it('should fetch the recipes data from `/recipes/recipes.json`', function () {
-    var phones = Phone.query();
+    var recipes = Recipe.query();
 
-    expect(phones).toEqual([]);
+    expect(recipes).toEqual([]);
 
     $httpBackend.flush();
-    expect(phones).toEqual(phonesData);
+    expect(recipes).toEqual(recipesData);
   });
 
 });

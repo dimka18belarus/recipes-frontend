@@ -1,8 +1,6 @@
 'use strict';
 
-angular.
-  module('core.phone').
-  factory('Phone', ['$resource',
+angular.module('core.recipe').factory('Recipe', ['$resource',
     function($resource) {
       return $resource('recipes/:phoneId.json', {}, {
         query: {

@@ -16,7 +16,7 @@ describe('PhoneCat Application', function() {
         browser.get('index.html#!/recipes');
     });
 
-    it('should filter the phone list as a user types into the search box', function() {
+    it('should filter the recipe list as a user types into the search box', function () {
       var recipeList = element.all(by.repeater('recipe in $ctrl.recipes'));
       var query = element(by.model('$ctrl.query'));
 
@@ -30,7 +30,7 @@ describe('PhoneCat Application', function() {
       expect(recipeList.count()).toBe(8);
     });
 
-    it('should be possible to control phone order via the drop-down menu', function() {
+    it('should be possible to control recipe order via the drop-down menu', function () {
       var queryField = element(by.model('$ctrl.query'));
       var orderSelect = element(by.model('$ctrl.orderProp'));
       var nameOption = orderSelect.element(by.css('option[value="name"]'));
@@ -57,7 +57,7 @@ describe('PhoneCat Application', function() {
       ]);
     });
 
-    it('should render phone specific links', function() {
+    it('should render recipe specific links', function () {
       var query = element(by.model('$ctrl.query'));
       query.sendKeys('nexus');
 
@@ -77,7 +77,7 @@ describe('PhoneCat Application', function() {
       expect(element(by.binding('$ctrl.recipe.name')).getText()).toBe('Nexus S');
     });
 
-    it('should display the first phone image as the main phone image', function() {
+    it('should display the first recipe image as the main recipe image', function () {
       var mainImage = element(by.css('img.phone.selected'));
 
       expect(mainImage.getAttribute('src')).toMatch(/img\/phones\/nexus-s.0.jpg/);

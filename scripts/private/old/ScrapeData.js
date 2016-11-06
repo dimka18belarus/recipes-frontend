@@ -9,7 +9,7 @@ var httpAgent = require('http-agent'),
     sys = require('sys');
 
 
-var agent = httpAgent.create('www.google.com', ['/phone/']);
+var agent = httpAgent.create('www.google.com', ['/recipe/']);
 var baseDir = __dirname + '/../app/recipes/';
 var phones = [];
 
