@@ -8,6 +8,19 @@
       "apple",
       "flour"
     ],
+    "prepareTime": 2,
+    "level": 2
+  },
+  {
+    "id": "3-chocolates",
+    "name": "Cake 3 chocolates",
+    "imageUrl": "img/recipes/3-chocolates.jpg",
+    "description": "The easiest cake to cook.",
+    "products": [
+      "chocolate 1",
+      "chocolate 2",
+      "chocolate 3"
+    ],
     "prepareTime": 1.5,
     "level": 1
   }

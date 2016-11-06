@@ -6,7 +6,7 @@ angular.module('recipeList').component('recipeList', {
   controller: ['Recipe',
     function RecipeListController(Recipe) {
       this.recipes = Recipe.query();
-        this.orderProp = 'age';
+      this.orderProp = 'name';
       }
     ]
   });
