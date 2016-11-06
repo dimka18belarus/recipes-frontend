@@ -4,7 +4,7 @@
 angular.module('recipeDetail').component('recipeDetail', {
   templateUrl: 'recipe-detail/recipe-detail.template.html',
     controller: ['$routeParams', 'Phone',
-      function PhoneDetailController($routeParams, Phone) {
+      function RecipeDetailController($routeParams, Phone) {
         var self = this;
         self.phone = Phone.get({phoneId: $routeParams.phoneId}, function(phone) {
           self.setImage(phone.images[0]);
