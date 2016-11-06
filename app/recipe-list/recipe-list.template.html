@@ -22,7 +22,7 @@
 
       <ul class="recipes">
         <li ng-repeat="recipe in $ctrl.recipes | filter:$ctrl.query | orderBy:$ctrl.orderProp"
-            class="thumbnail phone-list-item">
+            class="thumbnail recipe-list-item">
           <a href="#!/phones/{{recipe.id}}" class="thumb">
             <img ng-src="{{recipe.imageUrl}}" alt="{{recipe.name}}"/>
           </a>

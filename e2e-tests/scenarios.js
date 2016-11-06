@@ -85,7 +85,7 @@ describe('PhoneCat Application', function() {
 
     it('should swap the main image when clicking on a thumbnail image', function() {
       var mainImage = element(by.css('img.phone.selected'));
-      var thumbnails = element.all(by.css('.phone-thumbs img'));
+      var thumbnails = element.all(by.css('.recipe-thumbs img'));
 
       thumbnails.get(2).click();
       expect(mainImage.getAttribute('src')).toMatch(/img\/phones\/nexus-s.2.jpg/);

@@ -27,7 +27,7 @@ h1 {
 }
 
 /* View: Phone detail */
-.phone {
+.recipe {
   background-color: white;
   display: none;
   float: left;
@@ -38,11 +38,11 @@ h1 {
   width: 400px;
 }
 
-.phone:first-child {
+.recipe:first-child {
   display: block;
 }
 
-.phone-images {
+.recipe-images {
   background-color: white;
   float: left;
   height: 450px;
@@ -51,18 +51,18 @@ h1 {
   width: 450px;
 }
 
-.phone-thumbs {
+.recipe-thumbs {
   list-style: none;
   margin: 0;
 }
 
-.phone-thumbs img {
+.recipe-thumbs img {
   height: 100px;
   padding: 1em;
   width: 100px;
 }
 
-.phone-thumbs li {
+.recipe-thumbs li {
   background-color: white;
   border: 1px solid black;
   cursor: pointer;
