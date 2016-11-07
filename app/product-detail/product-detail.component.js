@@ -5,6 +5,7 @@ angular.module('productDetail').component('productDetail', {
             var self = this;
             self.product = Product.get({productId: $routeParams.productId}, function (product) {
                 self.setImage(product.images[0]);
+                console.log(product);
             });
 
             self.setImage = function setImage(imageUrl) {

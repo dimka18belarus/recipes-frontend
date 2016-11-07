@@ -1,0 +1,14 @@
+{
+  "name": "flour",
+  "images": [
+    "img/recipes/apple-pie/apple-pie0.jpg",
+    "img/recipes/apple-pie/apple-pie1.jpg"
+  ],
+  "advice": "Take green",
+  "description": "A lot of text data",
+  "rare": 1,
+  "tags": [
+    1,
+    2
+  ]
+}
