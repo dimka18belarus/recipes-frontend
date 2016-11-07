@@ -1,9 +1,9 @@
 // Register `recipeList` component, along with its associated controller and template
-angular.module('recipeList').component('recipeList', {
-    templateUrl: 'recipe-list/recipe-list.template.html',
-    controller: ['Recipe',
-        function RecipeListController(Recipe) {
-            this.recipes = Recipe.query();
+angular.module('productList').component('productList', {
+    templateUrl: 'product-list/product-list.template.html',
+    controller: ['Product',
+        function ProductListController(Product) {
+            this.products = Product.query();
             this.orderProp = 'name';
         }
     ]

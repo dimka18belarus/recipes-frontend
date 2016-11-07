@@ -1,31 +1,31 @@
-describe('recipeList', function () {
+describe('productList', function () {
 
-    // Load the module that contains the `recipeList` component before each test
-    beforeEach(module('recipeList'));
+    // Load the module that contains the `productList` component before each test
+    beforeEach(module('productList'));
 
     // Test the controller
-    describe('RecipeListController', function () {
+    describe('ProductListController', function () {
         var $httpBackend, ctrl;
 
         beforeEach(inject(function ($componentController, _$httpBackend_) {
             $httpBackend = _$httpBackend_;
-            $httpBackend.expectGET('recipes/recipes.json')
-                .respond([{name: 'Nexus S'}, {name: 'Motorola DROID'}]);
+            $httpBackend.expectGET('products/products.json')
+                .respond([{name: 'Product A'}, {name: 'Product B'}]);
 
-            ctrl = $componentController('recipeList');
+            ctrl = $componentController('productList');
         }));
 
-        it('should create a `recipes` property with 2 recipes fetched with `$http`', function () {
+        it('should create a `products` property with 2 products fetched with `$http`', function () {
             jasmine.addCustomEqualityTester(angular.equals);
 
-            expect(ctrl.recipes).toEqual([]);
+            expect(ctrl.products).toEqual([]);
 
             $httpBackend.flush();
-            expect(ctrl.recipes).toEqual([{name: 'Nexus S'}, {name: 'Motorola DROID'}]);
+            expect(ctrl.products).toEqual([{name: 'Product A'}, {name: 'Product B'}]);
         });
 
         it('should set a default value for the `orderProp` property', function () {
-            expect(ctrl.orderProp).toBe('age');
+            expect(ctrl.orderProp).toBe('name');
         });
 
     });

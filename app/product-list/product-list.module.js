@@ -1,2 +1,2 @@
 // Define the `recipeList` module
-angular.module('recipeList', ['core.recipe']);
+angular.module('productList', ['core.product']);
