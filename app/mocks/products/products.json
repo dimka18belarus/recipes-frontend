@@ -1,5 +1,6 @@
 [
   {
+    "id": "apple",
     "name": "apple",
     "imageUrl": "img/recipes/apple-pie/apple-pie0.jpg",
     "advice": "Take green",
@@ -10,6 +11,7 @@
     ]
   },
   {
+    "id": "flour",
     "name": "flour",
     "imageUrl": "img/recipes/apple-pie/apple-pie0.jpg",
     "advice": "Good advice",

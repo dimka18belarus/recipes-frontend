@@ -1,0 +1,14 @@
+{
+  "name": "apple",
+  "images": [
+    "img/recipes/apple-pie/apple-pie0.jpg",
+    "img/recipes/apple-pie/apple-pie1.jpg"
+  ],
+  "advice": "Take green",
+  "description": "A lot of text data",
+  "rare": 2,
+  "tags": [
+    1,
+    2
+  ]
+}
