@@ -12,7 +12,7 @@
                 Sort by:
                 <select ng-model="$ctrl.orderProp">
                     <option value="name">Alphabetical</option>
-                    <option value="level">Rare level</option>
+                    <option value="rare">Rare level</option>
                 </select>
             </p>
 
@@ -22,17 +22,20 @@
         <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
             <!--Body content-->
 
-            <ul class="recipes">
-                <li ng-repeat="product in $ctrl.products | filter:$ctrl.query | orderBy:$ctrl.orderProp"
-                    class="thumbnail recipe-list-item">
+            <div class="recipes">
+                <div ng-repeat="product in $ctrl.products | filter:$ctrl.query | orderBy:$ctrl.orderProp"
+                     class="col-xs-12 col-sm-12 col-md-12 col-lg-12 thumbnail recipe-list-item">
                     <a href="#!/products/{{product.id}}" class="thumb">
                         <img ng-src="{{product.imageUrl}}" alt="{{product.name}}"/>
                     </a>
                     <a href="#!/products/{{product.id}}">{{product.name}}</a>
-                    <p>{{product.description}}</p>
-                    <p>Hard level: {{product.level}}</p>
-                </li>
-            </ul>
+                    <p>{{product.advice}}</p>
+                    <p>Rare level: {{product.rare}}</p>
+                    <div ng-repeat="tag in product.tags">
+                        <div>{{ tag }}</div>
+                    </div>
+                </div>
+            </div>
 
         </div>
     </div>
