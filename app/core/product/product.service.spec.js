@@ -18,7 +18,7 @@ describe('Product', function () {
     // Instantiate the service and "train" `$httpBackend` before each test
     beforeEach(inject(function (_$httpBackend_, _Product_) {
         $httpBackend = _$httpBackend_;
-        $httpBackend.expectGET('products/products.json').respond(productsData);
+        $httpBackend.expectGET('mocks/products/products.json').respond(productsData);
 
         Product = _Product_;
     }));

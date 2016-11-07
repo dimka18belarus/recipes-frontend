@@ -1,10 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-2 col-sm=2 col-md-2 col-lg-2">
+            <!--Sidebar content-->
 
-</body>
-</html>
+            <p>
+                Search:
+                <input ng-model="$ctrl.query"/>
+            </p>
+
+            <p>
+                Sort by:
+                <select ng-model="$ctrl.orderProp">
+                    <option value="name">Alphabetical</option>
+                    <option value="level">Rare level</option>
+                </select>
+            </p>
+
+        </div>
+        <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+            <!--Body content-->
+
+            <ul class="recipes">
+                <li ng-repeat="product in $ctrl.products | filter:$ctrl.query | orderBy:$ctrl.orderProp"
+                    class="thumbnail recipe-list-item">
+                    <a href="#!/products/{{product.id}}" class="thumb">
+                        <img ng-src="{{product.imageUrl}}" alt="{{product.name}}"/>
+                    </a>
+                    <a href="#!/products/{{product.id}}">{{product.name}}</a>
+                    <p>{{product.description}}</p>
+                    <p>Hard level: {{product.level}}</p>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</div>

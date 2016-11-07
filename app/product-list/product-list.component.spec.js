@@ -9,7 +9,7 @@ describe('productList', function () {
 
         beforeEach(inject(function ($componentController, _$httpBackend_) {
             $httpBackend = _$httpBackend_;
-            $httpBackend.expectGET('products/products.json')
+            $httpBackend.expectGET('mocks/products/products.json')
                 .respond([{name: 'Product A'}, {name: 'Product B'}]);
 
             ctrl = $componentController('productList');
