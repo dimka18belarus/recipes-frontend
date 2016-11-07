@@ -1,7 +1,7 @@
 <div class="recipe-images">
     <img ng-src="{{img}}" class="recipe"
-       ng-class="{selected: img === $ctrl.mainImageUrl}"
-       ng-repeat="img in $ctrl.recipe.images"/>
+         ng-class="{selected: img === $ctrl.mainImageUrl}"
+         ng-repeat="img in $ctrl.recipe.images"/>
 </div>
 
 <h1>{{$ctrl.recipe.name}}</h1>
@@ -9,11 +9,28 @@
 <p>{{$ctrl.recipe.description}}</p>
 
 <ul class="recipe-thumbs">
-  <li ng-repeat="img in $ctrl.recipe.images">
-    <img ng-src="{{img}}" ng-click="$ctrl.setImage(img)" />
-  </li>
+    <li ng-repeat="img in $ctrl.recipe.images">
+        <img ng-src="{{img}}" ng-click="$ctrl.setImage(img)"/>
+    </li>
 </ul>
 
 <ul class="specs">
-
+    <p>Advice: {{ $ctrl.recipe.advice }}</p>
+    <h3>Products</h3>
+    <ol>
+        <li ng-repeat="product in $ctrl.recipe.products">
+            <p>{{ product.name }}</p>
+            <img src="{{ product.imageUrl }}">
+            <p>Advice: {{ product.advice }}</p>
+            <p>Rare level {{ product.rare }}</p>
+            <p>Tags</p>
+            <ul>
+                <li ng-repeat="tag in product.tags">
+                    <p>{{ tag }}</p>
+                </li>
+            </ul>
+        </li>
+    </ol>
+    <p>Need time to prepare: {{ $ctrl.recipe.prepareTime }}</p>
+    <p>Hard level: {{ $ctrl.recipe.level }}</p>
 </ul>

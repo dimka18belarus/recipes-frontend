@@ -10,7 +10,7 @@
   "products": [
     {
       "name": "apple",
-      "imageUrl": "",
+      "imageUrl": "img/recipes/apple-pie/apple-pie0.jpg",
       "advice": "Take green",
       "rare": 1,
       "tags": [
@@ -20,7 +20,7 @@
     },
     {
       "name": "flour",
-      "imageUrl": "",
+      "imageUrl": "img/recipes/apple-pie/apple-pie0.jpg",
       "advice": "Good advice",
       "rare": 1,
       "tags": [
