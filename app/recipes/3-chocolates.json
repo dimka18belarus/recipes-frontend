@@ -1,0 +1,44 @@
+{
+  "id": "3-chocolates",
+  "name": "Cake 3 chocolates",
+  "images": [
+    "img/recipes/3-chocolates/3-chocolates0.jpg",
+    "img/recipes/3-chocolates/3-chocolates1.jpg"
+  ],
+  "description": "The easiest cake to cook.",
+  "advice": "Don't worry, be happy",
+  "products": [
+    {
+      "name": "chocolate 1",
+      "imageUrl": "",
+      "advice": "Take green",
+      "rare": 1,
+      "tags": [
+        1,
+        2
+      ]
+    },
+    {
+      "name": "chocolate 2",
+      "imageUrl": "",
+      "advice": "Good advice",
+      "rare": 1,
+      "tags": [
+        3,
+        4
+      ]
+    },
+    {
+      "name": "chocolate 3",
+      "imageUrl": "",
+      "advice": "Good advice",
+      "rare": 1,
+      "tags": [
+        3,
+        4
+      ]
+    }
+  ],
+  "prepareTime": 1.5,
+  "level": 1
+}

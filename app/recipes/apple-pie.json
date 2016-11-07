@@ -1,4 +1,11 @@
 {
+  "id": "apple-pie",
+  "name": "Apple pie",
+  "images": [
+    "img/recipes/apple-pie/apple-pie0.jpg",
+    "img/recipes/apple-pie/apple-pie1.jpg"
+  ],
+  "description": "The best pie in the world.",
   "advice": "Don't worry, be happy",
   "products": [
     {
@@ -21,5 +28,7 @@
         4
       ]
     }
-  ]
+  ],
+  "prepareTime": 2,
+  "level": 2
 }

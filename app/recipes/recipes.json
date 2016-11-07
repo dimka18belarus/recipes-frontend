@@ -2,7 +2,7 @@
   {
     "id": "apple-pie",
     "name": "Apple pie",
-    "imageUrl": "img/recipes/apple-pie.jpg",
+    "imageUrl": "img/recipes/apple-pie/apple-pie0.jpg",
     "description": "The best pie in the world.",
     "products": [
       "apple",
@@ -14,7 +14,7 @@
   {
     "id": "3-chocolates",
     "name": "Cake 3 chocolates",
-    "imageUrl": "img/recipes/3-chocolates.jpg",
+    "imageUrl": "img/recipes/3-chocolates/3-chocolates0.jpg",
     "description": "The easiest cake to cook.",
     "products": [
       "chocolate 1",
