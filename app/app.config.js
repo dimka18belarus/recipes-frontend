@@ -8,6 +8,8 @@ angular.module('recipeApp').config(['$locationProvider', '$routeProvider',
             template: '<recipe-detail></recipe-detail>'
         }).when('/products', {
             template: '<product-list></product-list>'
+        }).when('/products/:productId', {
+            template: '<product-detail></product-detail>'
         }).otherwise('/recipes');
     }
 ]);

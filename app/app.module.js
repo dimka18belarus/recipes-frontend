@@ -5,5 +5,6 @@ angular.module('recipeApp', [
     'core',
     'recipeDetail',
     'recipeList',
-    'productList'
+    'productList',
+    'productDetail'
 ]);
