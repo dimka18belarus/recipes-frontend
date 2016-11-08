@@ -9,9 +9,9 @@ angular.module('core.modal').service('Modal', ['$uibModal', function ($uibModal)
 
         var modal = $uibModal.open({
             animation: true,
-            templateUrl: 'scripts/shared/modal.template.html',
-            controller: 'ModalInstanceController',
-            controllerAs: 'modalController',
+            templateUrl: 'core/modal/modal.template.html',
+            controller: 'ModalWindowController',
+            controllerAs: 'ModalWindow',
             windowClass: 'center-modal',
             resolve: {
                 title: function () {

@@ -1,0 +1,32 @@
+<div>
+
+    <div class="modal-header">
+        <h3 class="modal-title">{{modalController.title}}</h3>
+    </div>
+    <div class="modal-body">
+        {{modalController.body}}
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-primary" type="button" ng-click="modalController.ok()">אישור</button>
+        <button ng-if="modalController.isError" class="btn btn-warning" type="button"
+                ng-click="modalController.cancel()">ביטול
+        </button>
+    </div>
+
+</div>
+
+<style>
+    .center-modal {
+        position: fixed;
+        top: 10%;
+        left: 18.5%;
+        z-index: 1050;
+        width: 80%;
+        height: 80%;
+        margin-left: -10%;
+    }
+
+    .modal-dialog {
+        top: 30%;
+    }
+</style>
