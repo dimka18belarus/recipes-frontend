@@ -1,11 +1,11 @@
-angular.module('core.recipe').factory('Recipe', ['$resource',
-    function($resource) {
+angular.module('core.recipe').service('Recipe', ['$resource',
+    function ($resource) {
         return $resource('mocks/recipes/:recipeId.json', {}, {
-        query: {
-          method: 'GET',
-            params: {recipeId: 'recipes'},
-          isArray: true
-        }
-      });
+            query: {
+                method: 'GET',
+                params: {recipeId: 'recipes'},
+                isArray: true
+            }
+        });
     }
-  ]);
+]);
