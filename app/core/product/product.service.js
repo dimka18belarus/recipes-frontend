@@ -1,4 +1,4 @@
-angular.module('core.product').factory('Product', ['$resource',
+angular.module('core.product').service('Product', ['$resource',
     function ($resource) {
         return $resource('mocks/products/:productId.json', {}, {
             query: {
