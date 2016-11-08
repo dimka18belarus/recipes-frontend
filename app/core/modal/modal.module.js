@@ -1,1 +1,1 @@
-angular.module('core.modal', ['$uibModal']);
+angular.module('core.modal', ['ui.bootstrap']);

@@ -2,6 +2,7 @@
 angular.module('recipeApp', [
     'ngAnimate',
     'ngRoute',
+    'ui.bootstrap',
     'core',
     'recipeDetail',
     'recipeList',
