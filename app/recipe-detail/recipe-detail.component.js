@@ -1,9 +1,8 @@
 angular.module('recipeDetail').component('recipeDetail', {
     templateUrl: 'recipe-detail/recipe-detail.template.html',
-    controller: ['$routeParams', 'Recipe', 'Modal',
-        function RecipeDetailController($routeParams, Recipe, Modal) {
+    controller: ['$routeParams', 'Recipe',
+        function RecipeDetailController($routeParams, Recipe) {
             var self = this;
-            Modal.activate("Hello world");
             self.recipe = Recipe.get({recipeId: $routeParams.recipeId}, function (recipe) {
                 self.setImage(recipe.images[0]);
             });
