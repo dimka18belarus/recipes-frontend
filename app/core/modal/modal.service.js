@@ -1,4 +1,4 @@
-angular.module('core.modal').service('Modal', ['$uibModal', function ($uibModal) {
+var modalService = angular.module('core.modal').service('Modal', ['$uibModal', function ($uibModal) {
 
     var self = this;
 
@@ -52,3 +52,24 @@ angular.module('core.modal').service('Modal', ['$uibModal', function ($uibModal)
     };
 }
 ]);
+
+modalService.$inject = ['$uibModal'];
+
+
+angular.module('core.modal').controller('ModalInstanceController', ModalInstanceController);
+function ModalInstanceController($uibModalInstance, title, body, isError) {
+    this.title = title;
+    this.body = body;
+    this.isError = isError;
+
+    this.ok = function () {
+        $uibModalInstance.close('close');
+    };
+
+    this.cancel = function () {
+        $uibModalInstance.close('dismiss');
+    };
+
+}
+
+ModalInstanceController.$inject = ['$uibModalInstance', 'title', 'body', 'isError'];

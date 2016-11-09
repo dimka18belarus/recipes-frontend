@@ -1,5 +1,3 @@
-
-
 describe('recipeDetail', function () {
 
   // Load the module that contains the `recipeDetail` component before each test
