@@ -1,5 +1,5 @@
 angular.module('login')
-    .controller('LoginCtrl', ['Login', 'modalService', function (Login, modalService) {
+    .controller('LoginCtrl', ['Login', 'Modal', function (Login, Modal) {
 
         var self = this;
 
@@ -22,10 +22,10 @@ angular.module('login')
 
         self.errorLogin = function (response) {
             if (response.data.message === 'Bad credentials') {
-                modalService.activate('שגיאה', 'שם משתמש או סיסמא שגויים');
+                Modal.activate('Bad credentials');
             }
             else {
-                modalService.activate('שגיאה', response.data.message);
+                Modal.activate('Success', response.data.message);
             }
         };
 

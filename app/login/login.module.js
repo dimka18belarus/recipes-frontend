@@ -1,1 +1,5 @@
-angular.module('login', ['$http', 'core.server']);
+angular.module('login', [
+    '$http',
+    'core.server',
+    'core.modal'
+]);
